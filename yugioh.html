@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <title>YUGIOH</title>
+    </head>
+    <body>
+        <script>
+            function myCal(count){
+    let arrayN=[];
+    for(let number=1; number<=count; number++) {
+        let argument=''
+ if(number%5===0 ||number%3===0 || number%2===0){
+    if(number%2===0){
+        if(argument!='')
+        argument+='-yu' 
+        else{
+            argument='yu' 
+        }
+    }
+     if(number%3===0){
+            if(argument!='')
+            argument+='-gi' 
+            else{
+                argument='gi' 
+            }
+        }
+        if(number%5===0){
+            if(argument!='')
+            argument+='-oh' 
+            else{
+                argument='oh' 
+            }
+        }
+}
+        else{
+            argument=number
+        }
+        arrayN.push(argument)
+    }
+    console.log(arrayN);
+}
+myCal(10)
+        </script>
+    </body>
